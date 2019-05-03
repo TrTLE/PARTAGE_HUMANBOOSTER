@@ -18,4 +18,37 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
+    //§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
+    //§§§§§§§§§§§§§§§§§§§§§§ POSITIONNING VIEW WITH CONSTRAINTS §§§§§§§§§§§§§§§§§§§§§
+    //§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
+
+    <View
+            android:id="@+id/MyFirstElement"
+            android:background="@color/MyFirstColor"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="400dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_height="100dp" android:layout_width="175dp"
+    />
+
+
+    //§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
+    //§§§§§§§§§§§§§§§§§§§§§§ POSITIONNING VIEW WITHOUT CONSTRAINTS §§§§§§§§§§§§§§§§§§
+    //§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
+    //______________________________________________________________
+    //_________________________WARNING______________________________
+    //______________________________________________________________
+
+    // THIS VIEW IS IGNORE CONSTRAINTS WITH THE LINE
+
+    // => tools:ignore="MissingConstraints"
+
+
+    <View
+            android:id="@+id/MyFSecondElement"
+            android:background="@color/LightSaulmon"
+            android:layout_width="200dp" android:layout_height="300dp"
+            tools:ignore="MissingConstraints"
+    />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
